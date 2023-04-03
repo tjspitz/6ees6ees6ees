@@ -1,3 +1,12 @@
-class ForagerBee {
-  // TODO..
+class ForagerBee extends Bee {
+  constructor () {
+    super(Bee);
+    this.age = 10;
+    this.job = 'find pollen';
+    this.canFly = true;
+    this.treasureChest = [];
+  }
+  forage() {
+    this.treasureChest.push('treasure');
+  }
 };
